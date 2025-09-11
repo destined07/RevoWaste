@@ -1,0 +1,70 @@
+:root {
+  --green-900: #064734;
+  --mint-100: #E0FFC2;
+  --surface: #f7fbf7;
+  --text: #0f1f1a;
+  --accent: #0aa06e;
+}
+
+* { box-sizing: border-box; }
+html, body, #root { height: 100%; }
+body {
+  margin: 0;
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  color: var(--text);
+  background: var(--surface);
+}
+
+.rw-app {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100dvh;
+}
+
+.rw-header {
+  background: var(--green-900);
+  color: white;
+  padding: 12px 20px;
+}
+.rw-header a { color: white; text-decoration: none; }
+.rw-brand {
+  display: flex; align-items: center; gap: 10px; font-weight: 700;
+}
+.rw-brand-badge {
+  background: var(--mint-100);
+  color: var(--green-900);
+  padding: 4px 8px; border-radius: 6px; font-size: 12px;
+}
+
+.rw-nav {
+  display: flex; gap: 12px; flex-wrap: wrap; margin-top: 8px;
+}
+.rw-nav a {
+  padding: 8px 12px; border-radius: 8px; background: rgba(255,255,255,0.1);
+}
+.rw-nav a.active { background: var(--mint-100); color: var(--green-900); }
+
+.rw-container { padding: 20px; max-width: 1100px; margin: 0 auto; }
+.rw-card {
+  background: white; border-radius: 12px; padding: 16px; box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.rw-footer {
+  background: var(--green-900);
+  color: white;
+  padding: 16px 20px;
+}
+  
+.rw-button {
+  background: var(--accent);
+  color: white;
+  border: none;
+  padding: 10px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.rw-grid { display: grid; gap: 16px; }
+@media (min-width: 800px) {
+  .rw-grid.cols-2 { grid-template-columns: 1fr 1fr; }
+  .rw-grid.cols-3 { grid-template-columns: repeat(3, 1fr); }
+}
