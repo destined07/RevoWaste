@@ -19,7 +19,9 @@ A scalable, IoT-driven platform for efficient waste management that integrates s
 - **Communication Layer** → IoT Gateway, REST/GraphQL APIs.  
 - **Backend Cloud** → App server, monitoring & analytics, database, rewards & training modules.  
 - **Frontend Layer** → Citizen mobile/web app, worker app, authority dashboard.  
-- **External Facilities** → Recycling centers, scrap shops, waste-to-energy plants.  
+- **External Facilities** → Recycling centers, scrap shops, waste-to-energy plants.
+  <img width="1360" height="1062" alt="image" src="https://github.com/user-attachments/assets/ccf3d0a7-a0a1-4cc4-b231-261208b77662" />
+
 
 ---
 
